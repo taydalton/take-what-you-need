@@ -1,0 +1,124 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2 {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Styling After Reset */
+body {
+    background-color: #d9d9d9;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.main-head {
+    background-color: #3c6e71;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 3rem;
+    width: 100%;
+    font-family: Helvetica, sans-serif;
+    color: #d9d9d9;
+}
+
+.description {
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: Georgia, serif;
+    font-weight: 400;
+    padding-top: 2rem;
+    color: #353535;
+}
+
+.sub-head {
+    text-align: center;
+    font-size: 2rem;
+    font-family: Helvetica, sans-serif;
+    padding-top: 4rem;
+    color: #3c6e71;
+}
+
+.generator {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    font-family: Georgia, serif;
+    color: #353535;
+}
+
+.button {
+    width: 8rem;
+    display: block;
+    margin: 0 auto;
+    font-family: Helvetica, sans-serif;
+    background-color: #3c6e71;
+    border: 1px solid #3c6e71;
+    border-radius: 5px;
+    color: #d9d9d9;
+}
+
+.button:hover {
+    cursor: pointer;
+    background: #353535;
+    border: 1px solid #353535;
+}
